@@ -26,6 +26,13 @@ A lo largo de la ejecución del notebook, se abarcaron las siguientes fases clav
 - `README.md`: Este documento que detalla el contexto y resultados.
 - Historial de `commits`: Reflejo estructurado del progreso del desarrollo.
 
-## 5. Instrucciones de Ejecución
+## 5. Conclusiones
+- Saltarse el perfilado exploratorio (con ydata-profiling o missingno) y eliminar filas/columnas a ciegas habría ocasionado una pérdida masiva de información útil (más del 50% de los datos en este caso).
+- Convertir errores de tipado a NaN de forma controlada (errors="coerce") y utilizar herramientas como SimpleImputer permitió retener registros valiosos y establecer una metodología escalable para datos futuros.
+- La implementación de técnicas como MinMaxScaler o RobustScaler preparó las variables numéricas aislando los efectos de escalas dispares y valores atípicos, paso crítico antes de alimentar modelos de machine learning.
+- El uso de herramientas declarativas como pandera marca la transición de verificaciones manuales hacia "contratos de datos" automatizados, garantizando que cualquier actualización futura en la base de datos cumpla con estrictas reglas de negocio antes de ser procesada.
+
+## 6. Instrucciones de Ejecución
 1. Clona o descarga este repositorio de GitHub.
 2. Instala las dependencias listadas si utilizas un entorno local:
+`pip install` `pandas numpy` `scikit-learn` `pandera` 
