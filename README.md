@@ -6,7 +6,7 @@
 Este repositorio contiene el desarrollo del Taller 3 de la asignatura, enfocado en técnicas modernas de detección y limpieza de datos. El objetivo del proyecto fue diagnosticar y tratar problemas de calidad de datos utilizando un entorno de pruebas con el dataset de ventas de la empresa ficticia "Tech Coffee Shop" (`dirty_cafe_sales.csv`). Esto simula un entorno real previo a la manipulación en bases de datos de producción.
 
 ## 2. Tecnologías y Librerías Utilizadas
-El análisis y limpieza se llevó a cabo en un entorno interactivo (**Google Colab** / **Jupyter Notebook**) bajo **Python 3**. 
+El análisis y limpieza se llevó a cabo en un entorno interactivo (**Google Colab**) bajo **Python 3**. 
 Las librerías implementadas incluyen:
 - `pandas` y `numpy` para la manipulación y análisis tabular.
 - `missingno` y `ydata-profiling` para exploración y visualización inicial de datos faltantes y atípicos.
